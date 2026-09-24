@@ -1,0 +1,11 @@
+const existing=Array.isArray(window.PICTUREPLUSH_GALLERY)?window.PICTUREPLUSH_GALLERY:[];
+const selected=[];const grid=document.getElementById('grid'),out=document.getElementById('output'),status=document.getElementById('status');
+const cleanName=n=>n.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-zA-Z0-9._-]+/g,'-').replace(/-+/g,'-').toLowerCase();
+function render(){grid.innerHTML='';selected.forEach((entry,i)=>{const card=document.createElement('div');card.className='item';const img=document.createElement('img');img.src=entry.url;img.alt='';const name=document.createElement('div');name.className='small';name.textContent=entry.fileName;const input=document.createElement('input');input.placeholder='Beschreibung / Alt-Text';input.value=entry.alt;input.addEventListener('input',()=>{entry.alt=input.value;updateOutput()});const del=document.createElement('button');del.textContent='Entfernen';del.style.marginTop='8px';del.onclick=()=>{URL.revokeObjectURL(entry.url);selected.splice(i,1);render();updateOutput()};card.append(img,name,input,del);grid.append(card)});updateOutput()}
+function data(){return existing.concat(selected.map(x=>({src:`assets/img/gallery/custom/${x.fileName}`,alt:x.alt||'PicturePlush Galerieprodukt'})))}
+function jsText(){return `/* PicturePlush Galerie – automatisch mit gallery-manager.html erzeugt. */\nwindow.PICTUREPLUSH_GALLERY = ${JSON.stringify(data(),null,2)};\n`}
+function updateOutput(){out.textContent=jsText();status.textContent=`${existing.length} bestehende + ${selected.length} neue = ${data().length} Einträge`;}
+document.getElementById('files').addEventListener('change',e=>{for(const file of e.target.files){selected.push({fileName:cleanName(file.name),alt:file.name.replace(/\.[^.]+$/,''),url:URL.createObjectURL(file)})}render();e.target.value=''});
+document.getElementById('download').onclick=()=>{const blob=new Blob([jsText()],{type:'text/javascript'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='gallery-data.js';a.click();setTimeout(()=>URL.revokeObjectURL(url),500)};
+document.getElementById('copy').onclick=async()=>{await navigator.clipboard.writeText(jsText());status.textContent='Code wurde kopiert.'};
+updateOutput();

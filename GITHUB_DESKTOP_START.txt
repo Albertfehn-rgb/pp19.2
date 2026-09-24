@@ -1,0 +1,12 @@
+PICTUREPLUSH – GITHUB DESKTOP START
+
+1. Diesen ZIP-Ordner entpacken.
+2. GitHub Desktop öffnen.
+3. File > Add Local Repository...
+4. Ordner "PicturePlush-GitHub-Desktop-v13" wählen.
+5. Falls gefragt: "create a repository".
+6. Commit to main.
+7. Publish repository.
+8. Auf GitHub: Settings > Pages > Deploy from a branch > main > /(root).
+
+Wichtig: Nicht nur den assets-Ordner auswählen. Der ausgewählte Repository-Ordner muss index.html enthalten.

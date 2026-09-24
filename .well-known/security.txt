@@ -1,0 +1,4 @@
+Contact: mailto:pictureplush@gmx.de
+Preferred-Languages: de, en
+Canonical: /.well-known/security.txt
+Expires: 2027-09-22T23:59:59Z

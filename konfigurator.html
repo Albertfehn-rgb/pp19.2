@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin"><meta name="format-detection" content="telephone=no">
+<title>PicturePlush – Konfigurator</title>
+<link rel="stylesheet" href="assets/css/configurator.css">
+</head>
+<body class="configurator-page"><header class="site-header"><div class="nav-wrap"><a class="brand" href="index.html"><img src="assets/img/branding/logo-pictureplush-new.webp" alt="PicturePlush Logo"><span>PicturePlush</span></a><nav class="nav" aria-label="Hauptnavigation"><a href="index.html">Startseite</a><a href="konfigurator.html" class="active">Konfigurator</a><a href="shop.html">Shop</a><a href="galerie.html">Galerie</a><a href="kontakt.html">Kontakt</a><a href="login.html">Anmelden</a><a href="agb.html">AGB</a><a href="impressum.html">Impressum</a></nav></div></header>
+<div class="container config-hero-wrap"><div class="page-hero"><span class="mini-badge">Konfigurator</span><h1>Erschaffe deine eigene Plüschfigur.</h1></div></div><div class="wrap">
+
+
+<div class="layout">
+<section class="panel">
+  <div class="panel-inner">
+    <h1>Deine Plüschfigur konfigurieren</h1>
+    <div class="controls-grid">
+      <div class="full">
+        <label for="fileInput">1. Motiv hochladen</label>
+        <input id="fileInput" type="file" accept="image/png,image/jpeg,image/webp">
+          <p class="upload-privacy">Die Bildverarbeitung läuft in dieser Version lokal in deinem Browser. Die Datei wird beim Erstellen der Vorschau nicht an einen Server übertragen. Maximal 20 MB, PNG/JPG/WebP.</p>
+      </div>
+
+      <div class="full">
+        <label>2. Ausführung <a class="info-link" href="ausfuehrungen.html" aria-label="Unterschied zwischen Gedruckt und Gestickt">i</a></label>
+        <div class="type-grid" id="typeGrid">
+          <button type="button" class="type-card active" data-type="printed"><span class="strong-label">Gedruckt</span></button>
+          <button type="button" class="type-card" data-type="stitched"><span class="strong-label">Gestickt</span></button>
+        </div>
+      </div>
+
+      <div class="full">
+        <label>3. Motivseiten</label>
+        <div class="side-grid" id="sideGrid">
+          <button type="button" class="side-card active" data-sides="single">Einseitig</button>
+          <button type="button" class="side-card" data-sides="double">Beidseitig (+5 €)</button>
+        </div>
+      </div>
+
+      <div class="full">
+        <label>4. Stofffarbe / Stoffoptik</label>
+        <div class="fabric-grid" id="fabricGrid"></div>
+      </div>
+
+      <div class="full">
+        <label>5. Aufhängung</label>
+        <div class="hanger-grid">
+          <button type="button" class="hanger-card active" data-hanger="cord"><img src="assets/embedded/batch-03/da5190ea16cb.webp" alt="Kordel"><span>Kordel</span></button>
+          <button type="button" class="hanger-card" data-hanger="ring"><img src="assets/embedded/batch-02/6522784d70e0.webp" alt="Schlüsselring"><span>Schlüsselring</span></button>
+          <button type="button" class="hanger-card" data-hanger="clip"><img src="assets/embedded/batch-02/a5cb381d960c.webp" alt="Clip"><span>Clip</span></button>
+          <button type="button" class="hanger-card" data-hanger="carabiner"><img src="assets/embedded/batch-03/ecd637b4d035.webp" alt="Karabiner + Kordel"><span>Karabiner + Kordel</span></button>
+          <button type="button" class="hanger-card" data-hanger="none"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20220%20120%22%3E%3Crect%20x%3D%2232%22%20y%3D%2234%22%20width%3D%22156%22%20height%3D%2260%22%20rx%3D%2216%22%20fill%3D%22white%22%20stroke%3D%22black%22%20stroke-width%3D%2210%22/%3E%3Cpath%20d%3D%22M110%2010c-17%200-23%2018-17%2031%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%228%22%20stroke-linecap%3D%22round%22%20opacity%3D%220.25%22/%3E%3Cpath%20d%3D%22M110%2010c17%200%2023%2018%2017%2031%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%228%22%20stroke-linecap%3D%22round%22%20opacity%3D%220.25%22/%3E%3Cline%20x1%3D%2276%22%20y1%3D%227%22%20x2%3D%22145%22%20y2%3D%2239%22%20stroke%3D%22black%22%20stroke-width%3D%228%22%20stroke-linecap%3D%22round%22/%3E%3Ctext%20x%3D%22110%22%20y%3D%2272%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%20font-size%3D%2224%22%20font-weight%3D%22700%22%3EOHNE%3C/text%3E%3C/svg%3E" alt="Ohne Aufhängung"><span>Ohne Aufhängung</span></button>
+        </div>
+      </div>
+
+      <div>
+        <label for="bgSelect">6. Hintergrund entfernen</label>
+        <select id="bgSelect"><option value="white">Weißen Hintergrund entfernen</option><option value="black">Schwarzen Hintergrund entfernen</option></select>
+      </div>
+
+      <div>
+        <label for="sizeRange">7. Endgröße</label>
+        <input id="sizeRange" type="range" min="5" max="20" step="1" value="10">
+        <div class="meta-row"><span>5 × 5 cm</span><span>20 × 20 cm</span></div>
+        <div class="pill" id="sizeValue">Aktuell: 10 × 10 cm</div>
+      </div>
+
+      <div>
+        <label for="borderRange">8. Randabstand</label>
+        <input id="borderRange" type="range" min="0" max="15" step="0.1" value="5">
+        <div class="meta-row"><span>0 · schmal</span><span>15 · breit</span></div>
+        <div class="pill" id="borderValue">Aktuell: 5,0</div>
+        <span class="upload-note">Die Skala 0–15 wird intern weich auf 5–20 % der Endgröße abgebildet. Die Vorschau reagiert sofort beim Verschieben.</span>
+      </div>
+
+      <div class="padding-control">
+        <label for="view360Depth">9. Polsterdicke <span class="helper-inline">(nur Vorschau)</span></label>
+        <input id="view360Depth" type="range" min="0" max="100" step="1" value="50">
+        <div class="meta-row"><span id="depthMinLabel">Flach</span><span id="depthMidLabel">Mittel</span><span id="depthMaxLabel">Maximal</span></div>
+        <div class="pill" id="view360DepthOutput">Mittel</div>
+        <span class="upload-note">Die sinnvolle Dicke wird automatisch an die gewählte Größe angepasst. Der Regler verändert nur die 3D-Vorschau.</span>
+      </div>
+
+      <div class="full">
+        <label for="qtyInput">9. Menge</label>
+        <input id="qtyInput" type="number" min="1" step="1" value="1">
+      </div>
+
+      <div class="pricebox full">
+        <div>
+          <div class="price" id="priceValue">10 €</div>
+          <div class="shipping" id="unitPriceText">Einzelpreis: 10 €</div>
+          <div class="shipping">+ 4,99 € Versand in Deutschland</div>
+          <div class="shipping" id="totalText">Gesamt: 14,99 €</div>
+        </div>
+        <div class="pill">Beidseitig: +5 €</div>
+      </div>
+
+
+      <div class="rights-box full" id="rightsBox">
+        <strong>Bitte nur eigene oder rechtmäßig nutzbare Motive hochladen.</strong>
+        <div>Du darfst nur Inhalte verwenden, die du selbst erstellt hast oder für deren Nutzung, Bearbeitung und Herstellung du über die erforderlichen Rechte verfügst. Offensichtlich rechtsverletzende Motive können wir ablehnen.</div>
+        <div class="rights-confirm">
+          <input id="rightsConfirm" type="checkbox" required>
+          <label for="rightsConfirm">Ich bestätige, dass ich über die für diese Bestellung erforderlichen Rechte am hochgeladenen Motiv verfüge und dass die Herstellung keine Urheber-, Marken-, Design-, Persönlichkeits- oder sonstigen Rechte Dritter verletzt.</label>
+        </div>
+      </div>
+      <div class="helper full"><strong>Individuelle Anfertigung:</strong> Ein nach deinem Motiv und deiner Konfiguration hergestelltes PicturePlush ist individuell angefertigt. Für solche Waren besteht grundsätzlich kein gesetzliches Widerrufsrecht. Gesetzliche Mängelrechte bleiben unberührt.</div>
+
+      <div class="actions full">
+        <button id="renderBtn" type="button">Vorschau erstellen</button>
+        <button id="downloadBtn" type="button">Vorschau herunterladen</button>
+        <button id="orderBtn" class="primary" type="button">Bestellung vorbereiten</button>
+      </div>
+      <div id="renderStatus" class="helper full" aria-live="polite" hidden></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="panel sticky-preview" id="previewPanel">
+  <div class="preview-wrap">
+    <div class="preview-top">
+      <h2>Live-Vorschau</h2>
+      <div class="preview-toolbar">
+        <div class="pill" id="summaryPill">Gedruckt · Einseitig · 10 × 10 cm · Cloud White · Kordel · Menge: 1</div>
+        <div class="zoom-controls" aria-label="Vorschau-Zoom">
+          <button id="zoomOutBtn" type="button" aria-label="Vorschau verkleinern">−</button>
+          <span class="pill zoom-level" id="zoomLevel">100%</span>
+          <button id="zoomInBtn" type="button" aria-label="Vorschau vergrößern">+</button>
+          <button id="zoomResetBtn" type="button">Anpassen</button>
+          <button id="maximizeBtn" class="primary" type="button">Vollbild</button>
+        </div>
+      </div>
+    </div>
+    <div class="preview-modebar" aria-label="Vorschaumodus">
+      <button id="normalPreviewMode" class="active" type="button">2D Ansicht</button>
+      <button id="view360PreviewMode" type="button" disabled>3D · 360°</button>
+    </div>
+    <p class="view360-hint">Nach dem Upload startet automatisch die drehende 3D-Vorschau. Änderungen an Größe, Stoff, Ausführung oder Aufhängung werden live übernommen. Mit „2D Ansicht“ wechselst du jederzeit zurück.</p>
+    <div class="preview-stage" id="previewStage">
+      <div class="preview-viewport" id="previewViewport">
+        <div class="preview-inner" id="previewInner">
+          <canvas class="preview-canvas" id="previewCanvas" width="900" height="900"></canvas>
+          <canvas class="preview-canvas" id="preview360Canvas" width="1100" height="850" hidden aria-label="Drehbare 360 Grad Vorschau"></canvas>
+        </div>
+      </div>
+    </div>
+    <div id="view360Controls" class="view360-controls" hidden>
+      <div class="view360-control"><label for="view360Angle">Drehwinkel</label><input id="view360Angle" type="range" min="0" max="360" step="1" value="0"><output id="view360AngleOutput">0° · Vorne</output></div>
+      <div class="view360-control"><label>Bewegung</label><label class="view360-check"><input id="view360Auto" type="checkbox" checked>Automatisch drehen</label></div>
+    </div>
+  </div>
+</section>
+</div>
+</div>
+
+<script src="assets/js/configurator.js" defer></script>
+<footer class="site-footer"><div class="footer-wrap"><div><h4>PicturePlush</h4><p>Individuelle und fertige textile Anhänger, deren Form der Kontur des Motivs folgt.</p><span class="mini-badge">Jedes Stück wird einzeln gefertigt</span></div><div><h4>Seiten</h4><ul class="footer-list"><li><a href="index.html">Startseite</a></li><li><a href="konfigurator.html">Konfigurator</a></li><li><a href="shop.html">Shop</a></li><li><a href="galerie.html">Galerie</a></li><li><a href="kontakt.html">Kontakt</a><a href="login.html">Anmelden</a></li><li><a href="versand.html">Versand &amp; Lieferung</a></li><li><a href="produktsicherheit.html">Produktinformationen</a></li></ul></div><div><h4>Rechtliches</h4><ul class="footer-list"><li><a href="agb.html">AGB</a></li><li><a href="widerruf.html">Widerrufsbelehrung</a></li><li><a href="widerrufen.html">Vertrag widerrufen</a></li><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li><li><a href="cookies.html">Cookies &amp; Speichertechniken</a></li><li><a href="barrierefreiheit.html">Barrierefreiheit</a></li></ul></div></div></footer>
+</body>
+</html>

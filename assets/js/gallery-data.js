@@ -1,0 +1,45 @@
+/*
+  Offene PicturePlush-Galerie.
+  Neue Bilder am bequemsten mit gallery-manager.html ergänzen; manuell nach assets/img/gallery/custom/ kopieren und hier eintragen.
+  Die Seite hat keine feste Zeilen- oder Kartenbegrenzung.
+*/
+window.PICTUREPLUSH_GALLERY = [
+  { src: "assets/img/gallery/gallery-38.webp", alt: "PicturePlush Inseljunge mit Palme" },
+  { src: "assets/img/branding/logo-pictureplush-new.webp", alt: "Neues PicturePlush Logo mit pixeligem Schriftzug" },
+  { src: "assets/img/hero/hero-product-pictureplush-logo.webp", alt: "Neues PicturePlush Produktfoto mit weißem gesticktem Anhänger" },
+  { src: "assets/img/gallery/gallery-01.webp", alt: "PicturePlush Motiv in der Galerie" },
+  { src: "assets/img/gallery/gallery-02.webp", alt: "Individuell gefertigter PicturePlush-Anhänger" },
+  { src: "assets/img/gallery/gallery-03.webp", alt: "PicturePlush Einzelstück mit eigener Kontur" },
+  { src: "assets/img/gallery/gallery-04.webp", alt: "Personalisierter textiler PicturePlush-Anhänger" },
+  { src: "assets/img/gallery/gallery-05.webp", alt: "PicturePlush Motivbeispiel" },
+  { src: "assets/img/gallery/gallery-06.webp", alt: "PicturePlush Produktbeispiel" },
+  { src: "assets/img/gallery/gallery-07.webp", alt: "Individuelles PicturePlush Design" },
+  { src: "assets/img/gallery/gallery-08.webp", alt: "PicturePlush Anhänger als Einzelanfertigung" },
+  { src: "assets/img/gallery/gallery-09.webp", alt: "PicturePlush Galeriebeispiel" },
+  { src: "assets/img/gallery/gallery-10.webp", alt: "Textiler PicturePlush-Anhänger" },
+  { src: "assets/img/gallery/gallery-11.webp", alt: "PicturePlush Motiv mit individueller Form" },
+  { src: "assets/img/gallery/gallery-12.webp", alt: "Personalisierter PicturePlush" },
+  { src: "assets/img/gallery/gallery-13.webp", alt: "PicturePlush Designbeispiel" },
+  { src: "assets/img/gallery/gallery-14.webp", alt: "PicturePlush Produktfoto" },
+  { src: "assets/img/gallery/gallery-15.webp", alt: "Individuell hergestellter PicturePlush" },
+  { src: "assets/img/gallery/gallery-16.webp", alt: "PicturePlush Galerieprodukt" },
+  { src: "assets/img/gallery/gallery-17.webp", alt: "Weißer PicturePlush-Anhänger mit gezeichnetem Gesicht" },
+  { src: "assets/img/gallery/gallery-18.webp", alt: "PicturePlush-Anhänger mit Cartoonfigur und Bombe" },
+  { src: "assets/img/gallery/gallery-19.webp", alt: "PicturePlush-Anhänger mit blau-gelber Smiley-Blume" },
+  { src: "assets/img/gallery/gallery-20.webp", alt: "PicturePlush-Anhänger in Form einer Zigarette" },
+  { src: "assets/img/gallery/gallery-21.webp", alt: "PicturePlush-Anhänger an einer Hose getragen" },
+  { src: "assets/img/gallery/gallery-22.webp", alt: "PicturePlush-Anhänger mit gelber Tulpe" },
+  { src: "assets/img/gallery/gallery-23.webp", alt: "PicturePlush-Anhänger mit grüner Figur" },
+  { src: "assets/img/gallery/gallery-24.webp", alt: "PicturePlush-Anhänger mit pink-gelber Smiley-Blume" },
+  { src: "assets/img/gallery/gallery-25.webp", alt: "PicturePlush-Anhänger mit gestickter Figur auf Felsen" },
+  { src: "assets/img/gallery/gallery-26.webp", alt: "PicturePlush-Anhänger mit pinker Smiley-Blume" },
+  { src: "assets/img/gallery/gallery-27.webp", alt: "PicturePlush-Anhänger mit gezeichnetem Gesicht und Zöpfen" },
+  { src: "assets/img/gallery/gallery-28.webp", alt: "PicturePlush-Anhänger mit grüner Figur in blauer Kleidung" },
+  { src: "assets/img/gallery/gallery-29.webp", alt: "PicturePlush-Anhänger mit trauriger Cartoonfigur und Explosion" },
+  { src: "assets/img/gallery/gallery-30.webp", alt: "PicturePlush-Anhänger mit traurigem Gesicht" },
+  { src: "assets/img/gallery/gallery-31.webp", alt: "PicturePlush-Anhänger mit Bubble-Tea-Motiv" },
+  { src: "assets/img/gallery/gallery-32.webp", alt: "Runder PicturePlush-Anhänger mit Figur und grünem Rand" },
+  { src: "assets/img/gallery/gallery-33.webp", alt: "PicturePlush-Anhänger mit gelber Tulpe" },
+  { src: "assets/img/gallery/gallery-34.webp", alt: "PicturePlush-Anhänger mit Palme auf Insel" },
+  { src: "assets/img/gallery/gallery-35.webp", alt: "PicturePlush-Anhänger in Zigarettenform" }
+];

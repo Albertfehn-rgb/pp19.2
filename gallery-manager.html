@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin"><meta name="format-detection" content="telephone=no">
+<title>PicturePlush – Galerie verwalten</title>
+<link rel="stylesheet" href="assets/css/gallery-manager.css">
+<meta name="robots" content="noindex,nofollow"></head>
+<body><main class="wrap">
+<h1>PicturePlush Galerie-Manager</h1>
+<p class="muted">Lokales Hilfswerkzeug für GitHub Desktop. Die Seite lädt nichts ins Internet hoch. Du wählst Bilder aus, ergänzt Beschreibungen und lädst anschließend eine neue <code>gallery-data.js</code> herunter.</p>
+<section class="box"><h2>1. Bilder auswählen</h2><input id="files" type="file" accept="image/*" multiple><p class="small muted">Kopiere dieselben Bilddateien danach nach <code>assets/img/gallery/custom/</code>. Am besten Dateinamen ohne Umlaute und Leerzeichen verwenden.</p></section>
+<section class="box"><h2>2. Neue Einträge</h2><div id="grid" class="grid"></div></section>
+<section class="box"><h2>3. Bibliothek erzeugen</h2><div class="row"><button class="primary" id="download">gallery-data.js herunterladen</button><button id="copy">Code kopieren</button></div><p id="status" class="small muted"></p><pre id="output"></pre></section>
+<section class="box"><h2>So kommt es auf GitHub</h2><ol class="muted"><li>Lege die ausgewählten Bilder in <code>assets/img/gallery/custom/</code>.</li><li>Ersetze <code>assets/js/gallery-data.js</code> durch die hier heruntergeladene Datei.</li><li>GitHub Desktop zeigt die Änderungen automatisch an.</li><li><strong>Commit to main</strong> und danach <strong>Push origin</strong>.</li></ol><p class="small muted">Hinweis: Eine statische GitHub-Pages-Seite kann Dateien nicht selbst dauerhaft in dein Repository schreiben. Dafür wäre später ein echtes Admin-Backend oder die GitHub-API mit sicherer Authentifizierung nötig.</p></section>
+</main>
+<script src="assets/js/gallery-data.js"></script>
+<script src="assets/js/gallery-manager.js" defer></script></body></html>
